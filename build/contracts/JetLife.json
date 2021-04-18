@@ -1,0 +1,4129 @@
+{
+  "contractName": "JetLife",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "flight",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "carrier",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "flightTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "flightTicket",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "setting",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "setNumber",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "row",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "territory",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "region",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "country",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "insurance",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_carrier",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_flightTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "chooseFlight",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_region",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_country",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "_insurance",
+          "type": "bool"
+        }
+      ],
+      "name": "flightDesinstion",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_setNumber",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_row",
+          "type": "string"
+        }
+      ],
+      "name": "sittingArrangement",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "payment",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_carrier\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_flightTime\",\"type\":\"uint256\"}],\"name\":\"chooseFlight\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"flight\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"carrier\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"flightTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_region\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_country\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"_insurance\",\"type\":\"bool\"}],\"name\":\"flightDesinstion\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"flightTicket\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payment\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"setting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"setNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"row\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_setNumber\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_row\",\"type\":\"string\"}],\"name\":\"sittingArrangement\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"territory\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"region\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"country\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"insurance\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/jeffrey/JetLife/contracts/Jetlife.sol\":\"JetLife\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jeffrey/JetLife/contracts/Jetlife.sol\":{\"keccak256\":\"0xa0e60f156c8979e91d81e5ec766a8d4515393cdad48c16b6bcc0d223609d73ed\",\"urls\":[\"bzz-raw://d38137ae2f8e86858cebd6b379391ed1e5c0e10ede540263b1c64e8971264ec7\",\"dweb:/ipfs/QmWHzYdCrtPUtzZU1kCMgEfbgq55qyXGmnXMArMsLzqirz\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600060016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506729a2241af62c0000600181905550610e94806100706000396000f3fe6080604052600436106100865760003560e01c80634df4d7b7116100595780634df4d7b7146103ba5780638da5cb5b146103e5578063e3c9969114610426578063e8bb085a146104e1578063fdeb1a211461065657610086565b80632c9947471461008b57806342f6487a146101675780634a34e3a3146101715780634c975e0814610291575b600080fd5b34801561009757600080fd5b50610165600480360360608110156100ae57600080fd5b8101908080359060200190929190803590602001906401000000008111156100d557600080fd5b8201836020820111156100e757600080fd5b8035906020019184600183028401116401000000008311171561010957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506107bf565b005b61016f610816565b005b34801561017d57600080fd5b506101aa6004803603602081101561019457600080fd5b8101908080359060200190929190505050610901565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156101ee5780820151818401526020810190506101d3565b50505050905090810190601f16801561021b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b83811015610254578082015181840152602081019050610239565b50505050905090810190601f1680156102815780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561029d57600080fd5b506102ca600480360360208110156102b457600080fd5b8101908080359060200190929190505050610a55565b6040518080602001806020018415158152602001838103835286818151815260200191508051906020019080838360005b838110156103165780820151818401526020810190506102fb565b50505050905090810190601f1680156103435780820380516001836020036101000a031916815260200191505b50838103825285818151815260200191508051906020019080838360005b8381101561037c578082015181840152602081019050610361565b50505050905090810190601f1680156103a95780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b3480156103c657600080fd5b506103cf610bbc565b6040518082815260200191505060405180910390f35b3480156103f157600080fd5b506103fa610bc2565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561043257600080fd5b5061045f6004803603602081101561044957600080fd5b8101908080359060200190929190505050610be8565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156104a557808201518184015260208101905061048a565b50505050905090810190601f1680156104d25780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156104ed57600080fd5b506106546004803603608081101561050457600080fd5b81019080803590602001909291908035906020019064010000000081111561052b57600080fd5b82018360208201111561053d57600080fd5b8035906020019184600183028401116401000000008311171561055f57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001906401000000008111156105c257600080fd5b8201836020820111156105d457600080fd5b803590602001918460018302840111640100000000831117156105f657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803515159060200190929190505050610ca4565b005b34801561066257600080fd5b506107bd6004803603606081101561067957600080fd5b8101908080359060200190929190803590602001906401000000008111156106a057600080fd5b8201836020820111156106b257600080fd5b803590602001918460018302840111640100000000831117156106d457600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019064010000000081111561073757600080fd5b82018360208201111561074957600080fd5b8035906020019184600183028401116401000000008311171561076b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610d57565b005b604051806040016040528083815260200182815250600260008581526020019081526020016000206000820151816000019080519060200190610803929190610dc1565b5060208201518160010155905050505050565b6729a2241af62c00006001541015610896576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f4d75737420706179207469636b657420707269636520696e2066756c6c2e000081525060200191505060405180910390fd5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156108fe573d6000803e3d6000fd5b50565b6004602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156109ad5780601f10610982576101008083540402835291602001916109ad565b820191906000526020600020905b81548152906001019060200180831161099057829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610a4b5780601f10610a2057610100808354040283529160200191610a4b565b820191906000526020600020905b815481529060010190602001808311610a2e57829003601f168201915b5050505050905082565b6003602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610b015780601f10610ad657610100808354040283529160200191610b01565b820191906000526020600020905b815481529060010190602001808311610ae457829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610b9f5780601f10610b7457610100808354040283529160200191610b9f565b820191906000526020600020905b815481529060010190602001808311610b8257829003601f168201915b5050505050908060020160009054906101000a900460ff16905083565b60015481565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610c945780601f10610c6957610100808354040283529160200191610c94565b820191906000526020600020905b815481529060010190602001808311610c7757829003601f168201915b5050505050908060010154905082565b6040518060600160405280848152602001838152602001821515815250600360008681526020019081526020016000206000820151816000019080519060200190610cf0929190610dc1565b506020820151816001019080519060200190610d0d929190610dc1565b5060408201518160020160006101000a81548160ff02191690831515021790555090505060011515600960009054906101000a900460ff16151514610d5157600080fd5b50505050565b604051806040016040528083815260200182815250600460008581526020019081526020016000206000820151816000019080519060200190610d9b929190610dc1565b506020820151816001019080519060200190610db8929190610dc1565b50905050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610e0257805160ff1916838001178555610e30565b82800160010185558215610e30579182015b82811115610e2f578251825591602001919060010190610e14565b5b509050610e3d9190610e41565b5090565b5b80821115610e5a576000816000905550600101610e42565b509056fea2646970667358221220e71f73f05a468f7c3104fae2cd9862aa5f6ccfced1726cf7d6ad9d9a342a113264736f6c63430007030033",
+  "deployedBytecode": "0x6080604052600436106100865760003560e01c80634df4d7b7116100595780634df4d7b7146103ba5780638da5cb5b146103e5578063e3c9969114610426578063e8bb085a146104e1578063fdeb1a211461065657610086565b80632c9947471461008b57806342f6487a146101675780634a34e3a3146101715780634c975e0814610291575b600080fd5b34801561009757600080fd5b50610165600480360360608110156100ae57600080fd5b8101908080359060200190929190803590602001906401000000008111156100d557600080fd5b8201836020820111156100e757600080fd5b8035906020019184600183028401116401000000008311171561010957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001909291905050506107bf565b005b61016f610816565b005b34801561017d57600080fd5b506101aa6004803603602081101561019457600080fd5b8101908080359060200190929190505050610901565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156101ee5780820151818401526020810190506101d3565b50505050905090810190601f16801561021b5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b83811015610254578082015181840152602081019050610239565b50505050905090810190601f1680156102815780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561029d57600080fd5b506102ca600480360360208110156102b457600080fd5b8101908080359060200190929190505050610a55565b6040518080602001806020018415158152602001838103835286818151815260200191508051906020019080838360005b838110156103165780820151818401526020810190506102fb565b50505050905090810190601f1680156103435780820380516001836020036101000a031916815260200191505b50838103825285818151815260200191508051906020019080838360005b8381101561037c578082015181840152602081019050610361565b50505050905090810190601f1680156103a95780820380516001836020036101000a031916815260200191505b509550505050505060405180910390f35b3480156103c657600080fd5b506103cf610bbc565b6040518082815260200191505060405180910390f35b3480156103f157600080fd5b506103fa610bc2565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561043257600080fd5b5061045f6004803603602081101561044957600080fd5b8101908080359060200190929190505050610be8565b6040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156104a557808201518184015260208101905061048a565b50505050905090810190601f1680156104d25780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b3480156104ed57600080fd5b506106546004803603608081101561050457600080fd5b81019080803590602001909291908035906020019064010000000081111561052b57600080fd5b82018360208201111561053d57600080fd5b8035906020019184600183028401116401000000008311171561055f57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803590602001906401000000008111156105c257600080fd5b8201836020820111156105d457600080fd5b803590602001918460018302840111640100000000831117156105f657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803515159060200190929190505050610ca4565b005b34801561066257600080fd5b506107bd6004803603606081101561067957600080fd5b8101908080359060200190929190803590602001906401000000008111156106a057600080fd5b8201836020820111156106b257600080fd5b803590602001918460018302840111640100000000831117156106d457600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192908035906020019064010000000081111561073757600080fd5b82018360208201111561074957600080fd5b8035906020019184600183028401116401000000008311171561076b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610d57565b005b604051806040016040528083815260200182815250600260008581526020019081526020016000206000820151816000019080519060200190610803929190610dc1565b5060208201518160010155905050505050565b6729a2241af62c00006001541015610896576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f4d75737420706179207469636b657420707269636520696e2066756c6c2e000081525060200191505060405180910390fd5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156108fe573d6000803e3d6000fd5b50565b6004602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156109ad5780601f10610982576101008083540402835291602001916109ad565b820191906000526020600020905b81548152906001019060200180831161099057829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610a4b5780601f10610a2057610100808354040283529160200191610a4b565b820191906000526020600020905b815481529060010190602001808311610a2e57829003601f168201915b5050505050905082565b6003602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610b015780601f10610ad657610100808354040283529160200191610b01565b820191906000526020600020905b815481529060010190602001808311610ae457829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610b9f5780601f10610b7457610100808354040283529160200191610b9f565b820191906000526020600020905b815481529060010190602001808311610b8257829003601f168201915b5050505050908060020160009054906101000a900460ff16905083565b60015481565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f016020809104026020016040519081016040528092919081815260200182805460018160011615610100020316600290048015610c945780601f10610c6957610100808354040283529160200191610c94565b820191906000526020600020905b815481529060010190602001808311610c7757829003601f168201915b5050505050908060010154905082565b6040518060600160405280848152602001838152602001821515815250600360008681526020019081526020016000206000820151816000019080519060200190610cf0929190610dc1565b506020820151816001019080519060200190610d0d929190610dc1565b5060408201518160020160006101000a81548160ff02191690831515021790555090505060011515600960009054906101000a900460ff16151514610d5157600080fd5b50505050565b604051806040016040528083815260200182815250600460008581526020019081526020016000206000820151816000019080519060200190610d9b929190610dc1565b506020820151816001019080519060200190610db8929190610dc1565b50905050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10610e0257805160ff1916838001178555610e30565b82800160010185558215610e30579182015b82811115610e2f578251825591602001919060010190610e14565b5b509050610e3d9190610e41565b5090565b5b80821115610e5a576000816000905550600101610e42565b509056fea2646970667358221220e71f73f05a468f7c3104fae2cd9862aa5f6ccfced1726cf7d6ad9d9a342a113264736f6c63430007030033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "27:1634:0:-:0;;;538:122;;;;;;;;;;590:10;583:5;;:17;;;;;;;;;;;;;;;;;;635:7;621:12;:21;;;;27:1634;;;;;;",
+  "deployedSourceMap": "27:1634:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;951:152;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1504:154;;;:::i;:::-;;317:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;262:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:24;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;132:28;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;212:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1115:227;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1350:146;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;951:152;1056:37;;;;;;;;1071:8;1056:37;;;;1081:11;1056:37;;;1043:6;:11;1050:3;1043:11;;;;;;;;;;;:50;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;951:152;;;:::o;1504:154::-;1573:7;1557:12;;:23;;1549:65;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1625:5;;;;;;;;;;;:14;;:25;1640:9;1625:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1504:154::o;317:33::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;262:48::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;173:24::-;;;;:::o;132:28::-;;;;;;;;;;;;;:::o;212:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1115:227::-;1250:47;;;;;;;;1267:7;1250:47;;;;1276:8;1250:47;;;;1286:10;1250:47;;;;;1234:9;:14;1244:3;1234:14;;;;;;;;;;;:63;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1329:4;1316:17;;:9;;;;;;;;;;;:17;;;1308:26;;;;;;1115:227;;;;:::o;1350:146::-;1465:21;;;;;;;;1469:10;1465:21;;;;1481:4;1465:21;;;1451:7;:12;1459:3;1451:12;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;1350:146;;;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.7.3;\r\n\r\ncontract JetLife{\r\n\r\n    enum destination {domestic,international}\r\n    destination insuranceFee;\r\n\r\n    address payable public owner;\r\n    \r\n    uint public flightTicket;\r\n    \r\n\r\n    mapping(uint=> airlineService)public flight;\r\n    mapping(uint=> finalDestination)public territory;\r\n    mapping(uint=> set)public setting;\r\n    \r\n      string carrier;\r\n        uint flightTime;\r\n        string region;\r\n        string country;\r\n        bool insurance;\r\n        string setNumber;\r\n        string row;\r\n\r\n\r\n    constructor() public{\r\n            \r\n        owner= msg.sender;\r\n        \r\n        flightTicket= 3 ether;\r\n        \r\n    }\r\n\r\n    struct airlineService{\r\n        string carrier;\r\n        uint flightTime;\r\n\r\n    }\r\n\r\n    struct finalDestination{\r\n        string region;\r\n        string country;\r\n        bool insurance;\r\n\r\n    }\r\n\r\n    struct set{\r\n        string setNumber;\r\n        string row;\r\n\r\n    }\r\n\r\n\r\n    function chooseFlight(uint _id, string memory _carrier, uint  _flightTime) public{\r\n        flight[_id]= airlineService(_carrier, _flightTime);\r\n\r\n    }\r\n    \r\n    function flightDesinstion(uint _id, string memory _region , string memory _country, bool  _insurance) public{\r\n        territory[_id]= finalDestination(_region, _country, _insurance);\r\n        require(insurance == true);\r\n    }\r\n\r\n    function sittingArrangement(uint _id, string memory _setNumber, string memory _row) public{\r\n        setting[_id]= set(_setNumber, _row);\r\n\r\n    }\r\n\r\n    function payment()  payable public{\r\n        require(flightTicket >= 3 ether,\"Must pay ticket price in full.\");\r\n        owner.transfer(msg.value);\r\n    }\r\n}",
+  "sourcePath": "C:/Users/jeffrey/JetLife/contracts/Jetlife.sol",
+  "ast": {
+    "absolutePath": "/C/Users/jeffrey/JetLife/contracts/Jetlife.sol",
+    "exportedSymbols": {
+      "JetLife": [
+        151
+      ]
+    },
+    "id": 152,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 151,
+        "linearizedBaseContracts": [
+          151
+        ],
+        "name": "JetLife",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "JetLife.destination",
+            "id": 4,
+            "members": [
+              {
+                "id": 2,
+                "name": "domestic",
+                "nodeType": "EnumValue",
+                "src": "70:8:0"
+              },
+              {
+                "id": 3,
+                "name": "international",
+                "nodeType": "EnumValue",
+                "src": "79:13:0"
+              }
+            ],
+            "name": "destination",
+            "nodeType": "EnumDefinition",
+            "src": "52:41:0"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "mutability": "mutable",
+            "name": "insuranceFee",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "99:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_destination_$4",
+              "typeString": "enum JetLife.destination"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "destination",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4,
+              "src": "99:11:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_destination_$4",
+                "typeString": "enum JetLife.destination"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "id": 8,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "132:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 7,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "132:15:0",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "4df4d7b7",
+            "id": 10,
+            "mutability": "mutable",
+            "name": "flightTicket",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "173:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 9,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "e3c99691",
+            "id": 14,
+            "mutability": "mutable",
+            "name": "flight",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "212:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_airlineService_$54_storage_$",
+              "typeString": "mapping(uint256 => struct JetLife.airlineService)"
+            },
+            "typeName": {
+              "id": 13,
+              "keyType": {
+                "id": 11,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "220:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "212:30:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_airlineService_$54_storage_$",
+                "typeString": "mapping(uint256 => struct JetLife.airlineService)"
+              },
+              "valueType": {
+                "id": 12,
+                "name": "airlineService",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 54,
+                "src": "227:14:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_airlineService_$54_storage_ptr",
+                  "typeString": "struct JetLife.airlineService"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "4c975e08",
+            "id": 18,
+            "mutability": "mutable",
+            "name": "territory",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "262:48:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_finalDestination_$61_storage_$",
+              "typeString": "mapping(uint256 => struct JetLife.finalDestination)"
+            },
+            "typeName": {
+              "id": 17,
+              "keyType": {
+                "id": 15,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "270:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "262:32:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_finalDestination_$61_storage_$",
+                "typeString": "mapping(uint256 => struct JetLife.finalDestination)"
+              },
+              "valueType": {
+                "id": 16,
+                "name": "finalDestination",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 61,
+                "src": "277:16:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_finalDestination_$61_storage_ptr",
+                  "typeString": "struct JetLife.finalDestination"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "4a34e3a3",
+            "id": 22,
+            "mutability": "mutable",
+            "name": "setting",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "317:33:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_set_$66_storage_$",
+              "typeString": "mapping(uint256 => struct JetLife.set)"
+            },
+            "typeName": {
+              "id": 21,
+              "keyType": {
+                "id": 19,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "325:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "317:19:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_set_$66_storage_$",
+                "typeString": "mapping(uint256 => struct JetLife.set)"
+              },
+              "valueType": {
+                "id": 20,
+                "name": "set",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 66,
+                "src": "332:3:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_set_$66_storage_ptr",
+                  "typeString": "struct JetLife.set"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 24,
+            "mutability": "mutable",
+            "name": "carrier",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "365:14:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 23,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "365:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 26,
+            "mutability": "mutable",
+            "name": "flightTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "390:15:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 25,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "390:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 28,
+            "mutability": "mutable",
+            "name": "region",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "416:13:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 27,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "416:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 30,
+            "mutability": "mutable",
+            "name": "country",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "440:14:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 29,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "440:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 32,
+            "mutability": "mutable",
+            "name": "insurance",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "465:14:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 31,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "465:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 34,
+            "mutability": "mutable",
+            "name": "setNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "490:16:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 33,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "490:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 36,
+            "mutability": "mutable",
+            "name": "row",
+            "nodeType": "VariableDeclaration",
+            "scope": 151,
+            "src": "517:10:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "517:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 48,
+              "nodeType": "Block",
+              "src": "558:102:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 42,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 39,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8,
+                      "src": "583:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 40,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "590:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 41,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "590:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "583:17:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "id": 43,
+                  "nodeType": "ExpressionStatement",
+                  "src": "583:17:0"
+                },
+                {
+                  "expression": {
+                    "id": 46,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 44,
+                      "name": "flightTicket",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "621:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "33",
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "635:7:0",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                        "typeString": "int_const 3000000000000000000"
+                      },
+                      "value": "3"
+                    },
+                    "src": "621:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 47,
+                  "nodeType": "ExpressionStatement",
+                  "src": "621:21:0"
+                }
+              ]
+            },
+            "id": 49,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 37,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "549:2:0"
+            },
+            "returnParameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "558:0:0"
+            },
+            "scope": 151,
+            "src": "538:122:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "JetLife.airlineService",
+            "id": 54,
+            "members": [
+              {
+                "constant": false,
+                "id": 51,
+                "mutability": "mutable",
+                "name": "carrier",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "700:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 50,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "700:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 53,
+                "mutability": "mutable",
+                "name": "flightTime",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "725:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 52,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "725:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "airlineService",
+            "nodeType": "StructDefinition",
+            "scope": 151,
+            "src": "668:82:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "JetLife.finalDestination",
+            "id": 61,
+            "members": [
+              {
+                "constant": false,
+                "id": 56,
+                "mutability": "mutable",
+                "name": "region",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "792:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 55,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "792:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 58,
+                "mutability": "mutable",
+                "name": "country",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "816:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 57,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "816:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 60,
+                "mutability": "mutable",
+                "name": "insurance",
+                "nodeType": "VariableDeclaration",
+                "scope": 61,
+                "src": "841:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 59,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "841:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "finalDestination",
+            "nodeType": "StructDefinition",
+            "scope": 151,
+            "src": "758:107:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "JetLife.set",
+            "id": 66,
+            "members": [
+              {
+                "constant": false,
+                "id": 63,
+                "mutability": "mutable",
+                "name": "setNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 66,
+                "src": "894:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 62,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "894:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 65,
+                "mutability": "mutable",
+                "name": "row",
+                "nodeType": "VariableDeclaration",
+                "scope": 66,
+                "src": "921:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 64,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "921:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "set",
+            "nodeType": "StructDefinition",
+            "scope": 151,
+            "src": "873:68:0",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 84,
+              "nodeType": "Block",
+              "src": "1032:71:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 75,
+                        "name": "flight",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "1043:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_airlineService_$54_storage_$",
+                          "typeString": "mapping(uint256 => struct JetLife.airlineService storage ref)"
+                        }
+                      },
+                      "id": 77,
+                      "indexExpression": {
+                        "id": 76,
+                        "name": "_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "1050:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1043:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_airlineService_$54_storage",
+                        "typeString": "struct JetLife.airlineService storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 79,
+                          "name": "_carrier",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 70,
+                          "src": "1071:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "id": 80,
+                          "name": "_flightTime",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 72,
+                          "src": "1081:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 78,
+                        "name": "airlineService",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 54,
+                        "src": "1056:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_airlineService_$54_storage_ptr_$",
+                          "typeString": "type(struct JetLife.airlineService storage pointer)"
+                        }
+                      },
+                      "id": 81,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1056:37:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_airlineService_$54_memory_ptr",
+                        "typeString": "struct JetLife.airlineService memory"
+                      }
+                    },
+                    "src": "1043:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_airlineService_$54_storage",
+                      "typeString": "struct JetLife.airlineService storage ref"
+                    }
+                  },
+                  "id": 83,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1043:50:0"
+                }
+              ]
+            },
+            "functionSelector": "2c994747",
+            "id": 85,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "chooseFlight",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 73,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 68,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "973:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 67,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "973:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 70,
+                  "mutability": "mutable",
+                  "name": "_carrier",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "983:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 69,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "983:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 72,
+                  "mutability": "mutable",
+                  "name": "_flightTime",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "1007:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 71,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1007:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "972:53:0"
+            },
+            "returnParameters": {
+              "id": 74,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1032:0:0"
+            },
+            "scope": 151,
+            "src": "951:152:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 112,
+              "nodeType": "Block",
+              "src": "1223:119:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 104,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 96,
+                        "name": "territory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "1234:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_finalDestination_$61_storage_$",
+                          "typeString": "mapping(uint256 => struct JetLife.finalDestination storage ref)"
+                        }
+                      },
+                      "id": 98,
+                      "indexExpression": {
+                        "id": 97,
+                        "name": "_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 87,
+                        "src": "1244:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1234:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_finalDestination_$61_storage",
+                        "typeString": "struct JetLife.finalDestination storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 100,
+                          "name": "_region",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 89,
+                          "src": "1267:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "id": 101,
+                          "name": "_country",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 91,
+                          "src": "1276:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "id": 102,
+                          "name": "_insurance",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 93,
+                          "src": "1286:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 99,
+                        "name": "finalDestination",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 61,
+                        "src": "1250:16:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_finalDestination_$61_storage_ptr_$",
+                          "typeString": "type(struct JetLife.finalDestination storage pointer)"
+                        }
+                      },
+                      "id": 103,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1250:47:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_finalDestination_$61_memory_ptr",
+                        "typeString": "struct JetLife.finalDestination memory"
+                      }
+                    },
+                    "src": "1234:63:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_finalDestination_$61_storage",
+                      "typeString": "struct JetLife.finalDestination storage ref"
+                    }
+                  },
+                  "id": 105,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1234:63:0"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "id": 109,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 107,
+                          "name": "insurance",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32,
+                          "src": "1316:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "hexValue": "74727565",
+                          "id": 108,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1329:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "src": "1316:17:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 106,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1308:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 110,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1308:26:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 111,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1308:26:0"
+                }
+              ]
+            },
+            "functionSelector": "e8bb085a",
+            "id": 113,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flightDesinstion",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 94,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 87,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 113,
+                  "src": "1141:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1141:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 89,
+                  "mutability": "mutable",
+                  "name": "_region",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 113,
+                  "src": "1151:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 88,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1151:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 91,
+                  "mutability": "mutable",
+                  "name": "_country",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 113,
+                  "src": "1175:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 90,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1175:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 93,
+                  "mutability": "mutable",
+                  "name": "_insurance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 113,
+                  "src": "1199:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 92,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1199:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1140:76:0"
+            },
+            "returnParameters": {
+              "id": 95,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1223:0:0"
+            },
+            "scope": 151,
+            "src": "1115:227:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 131,
+              "nodeType": "Block",
+              "src": "1440:56:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 129,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 122,
+                        "name": "setting",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 22,
+                        "src": "1451:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_set_$66_storage_$",
+                          "typeString": "mapping(uint256 => struct JetLife.set storage ref)"
+                        }
+                      },
+                      "id": 124,
+                      "indexExpression": {
+                        "id": 123,
+                        "name": "_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 115,
+                        "src": "1459:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1451:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_set_$66_storage",
+                        "typeString": "struct JetLife.set storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 126,
+                          "name": "_setNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 117,
+                          "src": "1469:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "id": 127,
+                          "name": "_row",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 119,
+                          "src": "1481:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 125,
+                        "name": "set",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "1465:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_set_$66_storage_ptr_$",
+                          "typeString": "type(struct JetLife.set storage pointer)"
+                        }
+                      },
+                      "id": 128,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1465:21:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_set_$66_memory_ptr",
+                        "typeString": "struct JetLife.set memory"
+                      }
+                    },
+                    "src": "1451:35:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_set_$66_storage",
+                      "typeString": "struct JetLife.set storage ref"
+                    }
+                  },
+                  "id": 130,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1451:35:0"
+                }
+              ]
+            },
+            "functionSelector": "fdeb1a21",
+            "id": 132,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sittingArrangement",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 115,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 132,
+                  "src": "1378:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 114,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1378:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 117,
+                  "mutability": "mutable",
+                  "name": "_setNumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 132,
+                  "src": "1388:24:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 116,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1388:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 119,
+                  "mutability": "mutable",
+                  "name": "_row",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 132,
+                  "src": "1414:18:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1414:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1377:56:0"
+            },
+            "returnParameters": {
+              "id": 121,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1440:0:0"
+            },
+            "scope": 151,
+            "src": "1350:146:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 149,
+              "nodeType": "Block",
+              "src": "1538:120:0",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 138,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 136,
+                          "name": "flightTicket",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "1557:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "hexValue": "33",
+                          "id": 137,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1573:7:0",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_3000000000000000000_by_1",
+                            "typeString": "int_const 3000000000000000000"
+                          },
+                          "value": "3"
+                        },
+                        "src": "1557:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "4d75737420706179207469636b657420707269636520696e2066756c6c2e",
+                        "id": 139,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1581:32:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_cea38799b18f98c5e2eefa433e913cdf787daca85816a30753e4496118a4d38e",
+                          "typeString": "literal_string \"Must pay ticket price in full.\""
+                        },
+                        "value": "Must pay ticket price in full."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_cea38799b18f98c5e2eefa433e913cdf787daca85816a30753e4496118a4d38e",
+                          "typeString": "literal_string \"Must pay ticket price in full.\""
+                        }
+                      ],
+                      "id": 135,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "1549:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 140,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1549:65:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 141,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1549:65:0"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 145,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "1640:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 146,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "src": "1640:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 142,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "1625:5:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 144,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "1625:14:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 147,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1625:25:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 148,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1625:25:0"
+                }
+              ]
+            },
+            "functionSelector": "42f6487a",
+            "id": 150,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 133,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1520:2:0"
+            },
+            "returnParameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1538:0:0"
+            },
+            "scope": 151,
+            "src": "1504:154:0",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 152,
+        "src": "27:1634:0"
+      }
+    ],
+    "src": "0:1661:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/jeffrey/JetLife/contracts/Jetlife.sol",
+      "exportedSymbols": {
+        "JetLife": [
+          151
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            151
+          ],
+          "name": "JetLife",
+          "scope": 152
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "JetLife.destination",
+              "name": "destination"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "domestic"
+                },
+                "id": 2,
+                "name": "EnumValue",
+                "src": "70:8:0"
+              },
+              {
+                "attributes": {
+                  "name": "international"
+                },
+                "id": 3,
+                "name": "EnumValue",
+                "src": "79:13:0"
+              }
+            ],
+            "id": 4,
+            "name": "EnumDefinition",
+            "src": "52:41:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "insuranceFee",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum JetLife.destination",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "destination",
+                  "referencedDeclaration": 4,
+                  "type": "enum JetLife.destination"
+                },
+                "id": 5,
+                "name": "UserDefinedTypeName",
+                "src": "99:11:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "99:24:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "8da5cb5b",
+              "mutability": "mutable",
+              "name": "owner",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address payable",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "payable",
+                  "type": "address payable"
+                },
+                "id": 7,
+                "name": "ElementaryTypeName",
+                "src": "132:15:0"
+              }
+            ],
+            "id": 8,
+            "name": "VariableDeclaration",
+            "src": "132:28:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "4df4d7b7",
+              "mutability": "mutable",
+              "name": "flightTicket",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 9,
+                "name": "ElementaryTypeName",
+                "src": "173:4:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "173:24:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "e3c99691",
+              "mutability": "mutable",
+              "name": "flight",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct JetLife.airlineService)",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct JetLife.airlineService)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "220:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "airlineService",
+                      "referencedDeclaration": 54,
+                      "type": "struct JetLife.airlineService"
+                    },
+                    "id": 12,
+                    "name": "UserDefinedTypeName",
+                    "src": "227:14:0"
+                  }
+                ],
+                "id": 13,
+                "name": "Mapping",
+                "src": "212:30:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "212:43:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "4c975e08",
+              "mutability": "mutable",
+              "name": "territory",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct JetLife.finalDestination)",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct JetLife.finalDestination)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 15,
+                    "name": "ElementaryTypeName",
+                    "src": "270:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "finalDestination",
+                      "referencedDeclaration": 61,
+                      "type": "struct JetLife.finalDestination"
+                    },
+                    "id": 16,
+                    "name": "UserDefinedTypeName",
+                    "src": "277:16:0"
+                  }
+                ],
+                "id": 17,
+                "name": "Mapping",
+                "src": "262:32:0"
+              }
+            ],
+            "id": 18,
+            "name": "VariableDeclaration",
+            "src": "262:48:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "4a34e3a3",
+              "mutability": "mutable",
+              "name": "setting",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct JetLife.set)",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct JetLife.set)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 19,
+                    "name": "ElementaryTypeName",
+                    "src": "325:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "set",
+                      "referencedDeclaration": 66,
+                      "type": "struct JetLife.set"
+                    },
+                    "id": 20,
+                    "name": "UserDefinedTypeName",
+                    "src": "332:3:0"
+                  }
+                ],
+                "id": 21,
+                "name": "Mapping",
+                "src": "317:19:0"
+              }
+            ],
+            "id": 22,
+            "name": "VariableDeclaration",
+            "src": "317:33:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "carrier",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 23,
+                "name": "ElementaryTypeName",
+                "src": "365:6:0"
+              }
+            ],
+            "id": 24,
+            "name": "VariableDeclaration",
+            "src": "365:14:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "flightTime",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 25,
+                "name": "ElementaryTypeName",
+                "src": "390:4:0"
+              }
+            ],
+            "id": 26,
+            "name": "VariableDeclaration",
+            "src": "390:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "region",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 27,
+                "name": "ElementaryTypeName",
+                "src": "416:6:0"
+              }
+            ],
+            "id": 28,
+            "name": "VariableDeclaration",
+            "src": "416:13:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "country",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 29,
+                "name": "ElementaryTypeName",
+                "src": "440:6:0"
+              }
+            ],
+            "id": 30,
+            "name": "VariableDeclaration",
+            "src": "440:14:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "insurance",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bool",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bool",
+                  "type": "bool"
+                },
+                "id": 31,
+                "name": "ElementaryTypeName",
+                "src": "465:4:0"
+              }
+            ],
+            "id": 32,
+            "name": "VariableDeclaration",
+            "src": "465:14:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "setNumber",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 33,
+                "name": "ElementaryTypeName",
+                "src": "490:6:0"
+              }
+            ],
+            "id": 34,
+            "name": "VariableDeclaration",
+            "src": "490:16:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "row",
+              "scope": 151,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 35,
+                "name": "ElementaryTypeName",
+                "src": "517:6:0"
+              }
+            ],
+            "id": 36,
+            "name": "VariableDeclaration",
+            "src": "517:10:0"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 151,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 37,
+                "name": "ParameterList",
+                "src": "549:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "558:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address payable"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 8,
+                              "type": "address payable",
+                              "value": "owner"
+                            },
+                            "id": 39,
+                            "name": "Identifier",
+                            "src": "583:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 40,
+                                "name": "Identifier",
+                                "src": "590:3:0"
+                              }
+                            ],
+                            "id": 41,
+                            "name": "MemberAccess",
+                            "src": "590:10:0"
+                          }
+                        ],
+                        "id": 42,
+                        "name": "Assignment",
+                        "src": "583:17:0"
+                      }
+                    ],
+                    "id": 43,
+                    "name": "ExpressionStatement",
+                    "src": "583:17:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 10,
+                              "type": "uint256",
+                              "value": "flightTicket"
+                            },
+                            "id": 44,
+                            "name": "Identifier",
+                            "src": "621:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "33",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": "ether",
+                              "token": "number",
+                              "type": "int_const 3000000000000000000",
+                              "value": "3"
+                            },
+                            "id": 45,
+                            "name": "Literal",
+                            "src": "635:7:0"
+                          }
+                        ],
+                        "id": 46,
+                        "name": "Assignment",
+                        "src": "621:21:0"
+                      }
+                    ],
+                    "id": 47,
+                    "name": "ExpressionStatement",
+                    "src": "621:21:0"
+                  }
+                ],
+                "id": 48,
+                "name": "Block",
+                "src": "558:102:0"
+              }
+            ],
+            "id": 49,
+            "name": "FunctionDefinition",
+            "src": "538:122:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "JetLife.airlineService",
+              "name": "airlineService",
+              "scope": 151,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "carrier",
+                  "scope": 54,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 50,
+                    "name": "ElementaryTypeName",
+                    "src": "700:6:0"
+                  }
+                ],
+                "id": 51,
+                "name": "VariableDeclaration",
+                "src": "700:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "flightTime",
+                  "scope": 54,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 52,
+                    "name": "ElementaryTypeName",
+                    "src": "725:4:0"
+                  }
+                ],
+                "id": 53,
+                "name": "VariableDeclaration",
+                "src": "725:15:0"
+              }
+            ],
+            "id": 54,
+            "name": "StructDefinition",
+            "src": "668:82:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "JetLife.finalDestination",
+              "name": "finalDestination",
+              "scope": 151,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "region",
+                  "scope": 61,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 55,
+                    "name": "ElementaryTypeName",
+                    "src": "792:6:0"
+                  }
+                ],
+                "id": 56,
+                "name": "VariableDeclaration",
+                "src": "792:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "country",
+                  "scope": 61,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 57,
+                    "name": "ElementaryTypeName",
+                    "src": "816:6:0"
+                  }
+                ],
+                "id": 58,
+                "name": "VariableDeclaration",
+                "src": "816:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "insurance",
+                  "scope": 61,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 59,
+                    "name": "ElementaryTypeName",
+                    "src": "841:4:0"
+                  }
+                ],
+                "id": 60,
+                "name": "VariableDeclaration",
+                "src": "841:14:0"
+              }
+            ],
+            "id": 61,
+            "name": "StructDefinition",
+            "src": "758:107:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "JetLife.set",
+              "name": "set",
+              "scope": 151,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "setNumber",
+                  "scope": 66,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 62,
+                    "name": "ElementaryTypeName",
+                    "src": "894:6:0"
+                  }
+                ],
+                "id": 63,
+                "name": "VariableDeclaration",
+                "src": "894:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "row",
+                  "scope": 66,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 64,
+                    "name": "ElementaryTypeName",
+                    "src": "921:6:0"
+                  }
+                ],
+                "id": 65,
+                "name": "VariableDeclaration",
+                "src": "921:10:0"
+              }
+            ],
+            "id": 66,
+            "name": "StructDefinition",
+            "src": "873:68:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "2c994747",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "chooseFlight",
+              "scope": 151,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_id",
+                      "scope": 85,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 67,
+                        "name": "ElementaryTypeName",
+                        "src": "973:4:0"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "VariableDeclaration",
+                    "src": "973:8:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_carrier",
+                      "scope": 85,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 69,
+                        "name": "ElementaryTypeName",
+                        "src": "983:6:0"
+                      }
+                    ],
+                    "id": 70,
+                    "name": "VariableDeclaration",
+                    "src": "983:22:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_flightTime",
+                      "scope": 85,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 71,
+                        "name": "ElementaryTypeName",
+                        "src": "1007:4:0"
+                      }
+                    ],
+                    "id": 72,
+                    "name": "VariableDeclaration",
+                    "src": "1007:17:0"
+                  }
+                ],
+                "id": 73,
+                "name": "ParameterList",
+                "src": "972:53:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 74,
+                "name": "ParameterList",
+                "src": "1032:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct JetLife.airlineService storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct JetLife.airlineService storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 14,
+                                  "type": "mapping(uint256 => struct JetLife.airlineService storage ref)",
+                                  "value": "flight"
+                                },
+                                "id": 75,
+                                "name": "Identifier",
+                                "src": "1043:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 68,
+                                  "type": "uint256",
+                                  "value": "_id"
+                                },
+                                "id": 76,
+                                "name": "Identifier",
+                                "src": "1050:3:0"
+                              }
+                            ],
+                            "id": 77,
+                            "name": "IndexAccess",
+                            "src": "1043:11:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct JetLife.airlineService memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 54,
+                                  "type": "type(struct JetLife.airlineService storage pointer)",
+                                  "value": "airlineService"
+                                },
+                                "id": 78,
+                                "name": "Identifier",
+                                "src": "1056:14:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 70,
+                                  "type": "string memory",
+                                  "value": "_carrier"
+                                },
+                                "id": 79,
+                                "name": "Identifier",
+                                "src": "1071:8:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 72,
+                                  "type": "uint256",
+                                  "value": "_flightTime"
+                                },
+                                "id": 80,
+                                "name": "Identifier",
+                                "src": "1081:11:0"
+                              }
+                            ],
+                            "id": 81,
+                            "name": "FunctionCall",
+                            "src": "1056:37:0"
+                          }
+                        ],
+                        "id": 82,
+                        "name": "Assignment",
+                        "src": "1043:50:0"
+                      }
+                    ],
+                    "id": 83,
+                    "name": "ExpressionStatement",
+                    "src": "1043:50:0"
+                  }
+                ],
+                "id": 84,
+                "name": "Block",
+                "src": "1032:71:0"
+              }
+            ],
+            "id": 85,
+            "name": "FunctionDefinition",
+            "src": "951:152:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "e8bb085a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "flightDesinstion",
+              "scope": 151,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_id",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 86,
+                        "name": "ElementaryTypeName",
+                        "src": "1141:4:0"
+                      }
+                    ],
+                    "id": 87,
+                    "name": "VariableDeclaration",
+                    "src": "1141:8:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_region",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "1151:6:0"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "1151:21:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_country",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 90,
+                        "name": "ElementaryTypeName",
+                        "src": "1175:6:0"
+                      }
+                    ],
+                    "id": 91,
+                    "name": "VariableDeclaration",
+                    "src": "1175:22:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_insurance",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 92,
+                        "name": "ElementaryTypeName",
+                        "src": "1199:4:0"
+                      }
+                    ],
+                    "id": 93,
+                    "name": "VariableDeclaration",
+                    "src": "1199:16:0"
+                  }
+                ],
+                "id": 94,
+                "name": "ParameterList",
+                "src": "1140:76:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 95,
+                "name": "ParameterList",
+                "src": "1223:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct JetLife.finalDestination storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct JetLife.finalDestination storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 18,
+                                  "type": "mapping(uint256 => struct JetLife.finalDestination storage ref)",
+                                  "value": "territory"
+                                },
+                                "id": 96,
+                                "name": "Identifier",
+                                "src": "1234:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 87,
+                                  "type": "uint256",
+                                  "value": "_id"
+                                },
+                                "id": 97,
+                                "name": "Identifier",
+                                "src": "1244:3:0"
+                              }
+                            ],
+                            "id": 98,
+                            "name": "IndexAccess",
+                            "src": "1234:14:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct JetLife.finalDestination memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 61,
+                                  "type": "type(struct JetLife.finalDestination storage pointer)",
+                                  "value": "finalDestination"
+                                },
+                                "id": 99,
+                                "name": "Identifier",
+                                "src": "1250:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 89,
+                                  "type": "string memory",
+                                  "value": "_region"
+                                },
+                                "id": 100,
+                                "name": "Identifier",
+                                "src": "1267:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 91,
+                                  "type": "string memory",
+                                  "value": "_country"
+                                },
+                                "id": 101,
+                                "name": "Identifier",
+                                "src": "1276:8:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 93,
+                                  "type": "bool",
+                                  "value": "_insurance"
+                                },
+                                "id": 102,
+                                "name": "Identifier",
+                                "src": "1286:10:0"
+                              }
+                            ],
+                            "id": 103,
+                            "name": "FunctionCall",
+                            "src": "1250:47:0"
+                          }
+                        ],
+                        "id": 104,
+                        "name": "Assignment",
+                        "src": "1234:63:0"
+                      }
+                    ],
+                    "id": 105,
+                    "name": "ExpressionStatement",
+                    "src": "1234:63:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 106,
+                            "name": "Identifier",
+                            "src": "1308:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 32,
+                                  "type": "bool",
+                                  "value": "insurance"
+                                },
+                                "id": 107,
+                                "name": "Identifier",
+                                "src": "1316:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 108,
+                                "name": "Literal",
+                                "src": "1329:4:0"
+                              }
+                            ],
+                            "id": 109,
+                            "name": "BinaryOperation",
+                            "src": "1316:17:0"
+                          }
+                        ],
+                        "id": 110,
+                        "name": "FunctionCall",
+                        "src": "1308:26:0"
+                      }
+                    ],
+                    "id": 111,
+                    "name": "ExpressionStatement",
+                    "src": "1308:26:0"
+                  }
+                ],
+                "id": 112,
+                "name": "Block",
+                "src": "1223:119:0"
+              }
+            ],
+            "id": 113,
+            "name": "FunctionDefinition",
+            "src": "1115:227:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "fdeb1a21",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "sittingArrangement",
+              "scope": 151,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_id",
+                      "scope": 132,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 114,
+                        "name": "ElementaryTypeName",
+                        "src": "1378:4:0"
+                      }
+                    ],
+                    "id": 115,
+                    "name": "VariableDeclaration",
+                    "src": "1378:8:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_setNumber",
+                      "scope": 132,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 116,
+                        "name": "ElementaryTypeName",
+                        "src": "1388:6:0"
+                      }
+                    ],
+                    "id": 117,
+                    "name": "VariableDeclaration",
+                    "src": "1388:24:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_row",
+                      "scope": 132,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 118,
+                        "name": "ElementaryTypeName",
+                        "src": "1414:6:0"
+                      }
+                    ],
+                    "id": 119,
+                    "name": "VariableDeclaration",
+                    "src": "1414:18:0"
+                  }
+                ],
+                "id": 120,
+                "name": "ParameterList",
+                "src": "1377:56:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 121,
+                "name": "ParameterList",
+                "src": "1440:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct JetLife.set storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct JetLife.set storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 22,
+                                  "type": "mapping(uint256 => struct JetLife.set storage ref)",
+                                  "value": "setting"
+                                },
+                                "id": 122,
+                                "name": "Identifier",
+                                "src": "1451:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 115,
+                                  "type": "uint256",
+                                  "value": "_id"
+                                },
+                                "id": 123,
+                                "name": "Identifier",
+                                "src": "1459:3:0"
+                              }
+                            ],
+                            "id": 124,
+                            "name": "IndexAccess",
+                            "src": "1451:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "struct JetLife.set memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 66,
+                                  "type": "type(struct JetLife.set storage pointer)",
+                                  "value": "set"
+                                },
+                                "id": 125,
+                                "name": "Identifier",
+                                "src": "1465:3:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 117,
+                                  "type": "string memory",
+                                  "value": "_setNumber"
+                                },
+                                "id": 126,
+                                "name": "Identifier",
+                                "src": "1469:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 119,
+                                  "type": "string memory",
+                                  "value": "_row"
+                                },
+                                "id": 127,
+                                "name": "Identifier",
+                                "src": "1481:4:0"
+                              }
+                            ],
+                            "id": 128,
+                            "name": "FunctionCall",
+                            "src": "1465:21:0"
+                          }
+                        ],
+                        "id": 129,
+                        "name": "Assignment",
+                        "src": "1451:35:0"
+                      }
+                    ],
+                    "id": 130,
+                    "name": "ExpressionStatement",
+                    "src": "1451:35:0"
+                  }
+                ],
+                "id": 131,
+                "name": "Block",
+                "src": "1440:56:0"
+              }
+            ],
+            "id": 132,
+            "name": "FunctionDefinition",
+            "src": "1350:146:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "42f6487a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "payment",
+              "scope": 151,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 133,
+                "name": "ParameterList",
+                "src": "1520:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 134,
+                "name": "ParameterList",
+                "src": "1538:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_cea38799b18f98c5e2eefa433e913cdf787daca85816a30753e4496118a4d38e",
+                                  "typeString": "literal_string \"Must pay ticket price in full.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 135,
+                            "name": "Identifier",
+                            "src": "1549:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 10,
+                                  "type": "uint256",
+                                  "value": "flightTicket"
+                                },
+                                "id": 136,
+                                "name": "Identifier",
+                                "src": "1557:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "33",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 3000000000000000000",
+                                  "value": "3"
+                                },
+                                "id": 137,
+                                "name": "Literal",
+                                "src": "1573:7:0"
+                              }
+                            ],
+                            "id": 138,
+                            "name": "BinaryOperation",
+                            "src": "1557:23:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "4d75737420706179207469636b657420707269636520696e2066756c6c2e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"Must pay ticket price in full.\"",
+                              "value": "Must pay ticket price in full."
+                            },
+                            "id": 139,
+                            "name": "Literal",
+                            "src": "1581:32:0"
+                          }
+                        ],
+                        "id": 140,
+                        "name": "FunctionCall",
+                        "src": "1549:65:0"
+                      }
+                    ],
+                    "id": 141,
+                    "name": "ExpressionStatement",
+                    "src": "1549:65:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "transfer",
+                              "type": "function (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 8,
+                                  "type": "address payable",
+                                  "value": "owner"
+                                },
+                                "id": 142,
+                                "name": "Identifier",
+                                "src": "1625:5:0"
+                              }
+                            ],
+                            "id": 144,
+                            "name": "MemberAccess",
+                            "src": "1625:14:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "value",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 145,
+                                "name": "Identifier",
+                                "src": "1640:3:0"
+                              }
+                            ],
+                            "id": 146,
+                            "name": "MemberAccess",
+                            "src": "1640:9:0"
+                          }
+                        ],
+                        "id": 147,
+                        "name": "FunctionCall",
+                        "src": "1625:25:0"
+                      }
+                    ],
+                    "id": 148,
+                    "name": "ExpressionStatement",
+                    "src": "1625:25:0"
+                  }
+                ],
+                "id": 149,
+                "name": "Block",
+                "src": "1538:120:0"
+              }
+            ],
+            "id": 150,
+            "name": "FunctionDefinition",
+            "src": "1504:154:0"
+          }
+        ],
+        "id": 151,
+        "name": "ContractDefinition",
+        "src": "27:1634:0"
+      }
+    ],
+    "id": 152,
+    "name": "SourceUnit",
+    "src": "0:1661:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xe536174fdB2509f0d47d6170b670675C01cAbf6D",
+      "transactionHash": "0x18eb424b72f3a3897e7b301850ff16bb78d461133011f44baa8ff92ab56e47e5"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-03-24T00:28:40.185Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
